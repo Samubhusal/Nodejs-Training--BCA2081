@@ -1,9 +1,9 @@
-// // // console.log("samikshya");
-// //variable in javascript
+// console.log("samikshya");
+//variable in javascript
 // let program="HELLO";
 // console.log(program);
 
-// //constant in java script
+//constant in java script
 // const pi=3.14;
 // console.log(pi);
 
@@ -58,13 +58,30 @@
 // console.log(x);//allowed
 // console.log(y);//not allowed
 
-let x=5;
-function rest(){
-    let y=10;
-    console.log(x);
-    console.log(y);
+// let x=5;
+// function rest(){
+//     let y=10;
+//     console.log(x);
+//     console.log(y);
+// }
+// rest();
+// console.log(x);
+// console.log(y);
+
+//create a global variable score=50
+//create a function updatescore
+//inside the function ,create a local variable score =100;
+//print  score inside  the function
+//otside the function ,print the gobal score
+
+
+let a=50;
+function updatescore(){
+    let a=100;
+    console.log("inside function ,a =",a);
 }
-rest();
-console.log(x);
-console.log(y);
+updatescore();
+updatescore();
+
+console.log("outside function,a =",a);
 
