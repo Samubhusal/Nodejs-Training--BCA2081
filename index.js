@@ -85,3 +85,14 @@ updatescore();
 
 console.log("outside function,a =",a);
 
+let score=0;
+function playGame(){
+    let score=50;
+    console.log("inside function ,localscore =",score);
+    console.log("inside function,gobalscore=",globalscore);
+    globalscore+=10;
+}
+let globalscore=score;
+playGame();
+playGame();
+console.log("outside function ,globalscore=",globalscore);
