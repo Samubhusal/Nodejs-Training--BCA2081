@@ -75,24 +75,24 @@
 //otside the function ,print the gobal score
 
 
-let a=50;
-function updatescore(){
-    let a=100;
-    console.log("inside function ,a =",a);
-}
-updatescore();
-updatescore();
+// let a=50;
+// function updatescore(){
+//     let a=100;
+//     console.log("inside function ,a =",a);
+// }
+// updatescore();
+// updatescore();
 
-console.log("outside function,a =",a);
+// console.log("outside function,a =",a);
 
-let score=0;
-function playGame(){
-    let score=50;
-    console.log("inside function ,localscore =",score);
-    console.log("inside function,gobalscore=",globalscore);
-    globalscore+=10;
-}
-let globalscore=score;
-playGame();
-playGame();
-console.log("outside function ,globalscore=",globalscore);
+// let score=0;
+// function playGame(){
+//     let score=50;
+//     console.log("inside function ,localscore =",score);
+//     console.log("inside function,gobalscore=",globalscore);
+//     globalscore+=10;
+// }
+// let globalscore=score;
+// playGame();
+// playGame();
+// console.log("outside function ,globalscore=",globalscore);

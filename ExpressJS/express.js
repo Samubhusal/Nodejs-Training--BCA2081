@@ -93,20 +93,21 @@
 
 // Example of Middleware
 
-const express = require("express");
-const app = express();
+// const express = require("express");
+// const app = express();
 
-// Middleware to log requests
-app.use((req, res, next) => {
-  console.log(`${req.method} request for ${req.url}`);
-  next(); // Pass control to the next middleware function
-});
+// //Middleware to log requests
+// app.use((req, res, next) => {
+//   console.log(`${req.method} request for ${req.url}`);
+//   next(); // Pass control to the next middleware function
+// });
 
-// Route handler
-app.get("/", (req, res) => {
-  res.send("Hello from Express!");
-});
+// //Route handler
+// app.get("/", (req, res) => {
+//   res.send("Hello from Express!");
+// });
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
-});
+// app.listen(3000, () => {
+//   console.log("Server running on port 3000");
+// });
+
