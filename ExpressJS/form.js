@@ -3,11 +3,11 @@
 // const port=5000;
 
 
-// // To read JSON body (Postman raw -> JSON)
+// To read JSON body (Postman raw -> JSON)
 // app.use(express.json());
 
 
-// //to read from data
+//to read from data
 // app.use(express.urlencoded({extended:true}));
 
 // //POST route
