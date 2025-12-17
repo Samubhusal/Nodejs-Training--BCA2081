@@ -1,4 +1,4 @@
-// // GET Request with Query Params and URL Params
+// GET Request with Query Params and URL Params
 // const express = require("express");
 // const app = express();
 // const port = 5000;
@@ -83,19 +83,42 @@
 
 //Example of custom middleware
 
+// const express=require("express");
+// const app=express();
+
+// function myMiddleware(req,res,next){
+//   console.log("This is my custom middleware");
+//   next();
+// }
+// app.use(myMiddleware);
+
+// app.get("/",(req,res)=>{
+//   res.send("Home Page");
+// })
+// app.listen(5000,()=>{
+//   console.log("server started at http://localhost:5000");
+
+// })
+
+
+
+
+//EXAMPLE OF ERROR HANDLING MIDDLEWARE
 const express=require("express");
 const app=express();
 
-function myMiddleware(req,res,next){
-  console.log("This is my custom middleware");
-  next();
-}
-app.use(myMiddleware);
+app.get("/",(res,req,next)=>{
+  const error=new Error("Something went wrong");
+  //next("Something went wrong");
+  next(error);
+});
 
-app.get("/",(req,res)=>{
-  res.send("Home Page");
-})
+app.use((err,req,res,next)=>{
+  console.log("Error:",err.message);
+  res.send("Error occurred!")
+
+});
+
 app.listen(5000,()=>{
-  console.log("server started at http://localhost:5000");
-
-})
+  console.log("server satrted at http://localhost:5000");
+});
