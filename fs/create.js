@@ -25,3 +25,10 @@ console.log(filePath);
 
 const readFile=fs.readFileSync(filePath,"utf-8");
 console.log(readFile);
+
+
+
+
+
+
+
